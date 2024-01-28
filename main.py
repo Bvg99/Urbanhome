@@ -5,9 +5,9 @@ if x < 0:
     print('меньше нуля')
 print('дотвидания!')
 
-    # примеры
+# примеры
 
-a, b = 10, 6
+a, b = 10, 5
 
 if a > b:
     print('a > b')
@@ -20,21 +20,36 @@ if (a > b) and (a > 0 or b < 1000):
 
 if 5 < b and b < 10:
     print('успех3')
+print('условие не выполнено')
+
+# можно сравнивать
+
+if '34' > '123':
+    print('успех текст (34) > текст (123)')
+    print('потому, что')
+    print('3', ord('3'))
+    print('4', ord('4'))
+    print('1', ord('1'))
+    print('2', ord('2'))
+
+if '123' > '12':
+    print('успех 123 > 12')
+
+if [1, 1] > [1, 2]:
+    print('успех [1, 1] > [1, 2]')
+else:
+    print('no, [1, 1] < [1, 2]')
 
 
-# This is a sample Python script.
+# что нельзя сравнивать - разные типы
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+if '6' > 5:
+    print('успех')
 
+if [5, 6] > 5:
+    print('успех')
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+# но
 
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+if '6' != 5:
+    print('успех')
