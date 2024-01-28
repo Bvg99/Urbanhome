@@ -1,0 +1,2 @@
+zoo_pets = ['lion', 'elefant', 'monkey', 'skunk', 'horse']
+for animal in zoo_pets:
